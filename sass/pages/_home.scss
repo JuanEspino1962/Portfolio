@@ -1,0 +1,1574 @@
+@use '../abstracts/abstracts' as *;
+
+
+/* =========================
+   HERO - MOBILE
+   ========================= */
+
+.hero {
+  position: relative;
+
+  width: 100%;
+  min-height: 667px;
+
+  overflow: hidden;
+
+  &__rings-left {
+    position: absolute;
+    max-width: none;
+    z-index: 1;
+  }
+
+  &__rings-left--mobile {
+    display: block;
+
+    top: 124px;
+    left: 0;
+
+    width: 188px;
+    height: 129px;
+  }
+
+  &__rings-left--tablet,
+  &__rings-left--desktop {
+    display: none;
+  }
+
+  &__image-wrapper {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  &__image {
+    position: absolute;
+
+    top: 141px;
+    left: 101.24px;
+
+    width: 174.21px;
+    height: 242px;
+
+    max-width: none;
+    z-index: 2;
+  }
+
+  &__oval {
+    position: absolute;
+    max-width: none;
+    z-index: 3;
+  }
+
+  &__oval--mobile {
+    display: block;
+
+    top: 254px;
+    left: 311px;
+
+    width: 64px;
+    height: 129px;
+  }
+
+  &__oval--tablet,
+  &__oval--desktop {
+    display: none;
+  }
+
+  &__content {
+    position: absolute;
+
+    top: 423px;
+    left: 16px;
+
+    width: 343px;
+    height: 244px;
+
+    text-align: center;
+  }
+
+  &__title {
+    position: relative;
+
+    width: 343px;
+    height: 80px;
+
+    margin: 0;
+
+    color: $color-white;
+
+    font-family: $font-family-primary;
+    font-size: 40px;
+    font-weight: $font-weight-bold;
+    line-height: 40px;
+    letter-spacing: -1.14px;
+    text-align: center;
+
+    &::after {
+      content: '';
+
+      position: absolute;
+
+      top: 80px;
+      left: 86px;
+
+      width: 225px;
+      height: 4px;
+
+      background-color: $color-green;
+    }
+  }
+
+  &__title-mobile {
+    display: block;
+
+    > span {
+      display: block;
+      white-space: nowrap;
+    }
+  }
+
+  &__title-tablet {
+    display: none;
+  }
+
+  &__description {
+    position: absolute;
+
+    top: 104px;
+    left: 0;
+
+    width: 343px;
+    height: 78px;
+
+    margin: 0;
+
+    color: $color-grey;
+
+    font-family: $font-family-primary;
+    font-size: 16px;
+    font-weight: $font-weight-medium;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .link-button {
+    position: absolute;
+
+    top: 206px;
+    left: 112px;
+  }
+}
+
+
+/* =========================
+   SKILLS - MOBILE
+   ========================= */
+
+.skills {
+  position: relative;
+
+  width: 345px;
+  height: 604px;
+
+  margin-top: 80px;
+  margin-left: 16px;
+
+  border-top: 1px solid $color-white;
+  border-bottom: 1px solid $color-white;
+
+  overflow: visible;
+
+  &__list {
+    position: absolute;
+
+    top: 40px;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+
+    width: 345px;
+    height: 522px;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1px;
+
+    width: 345px;
+    height: 67px;
+
+    text-align: center;
+  }
+
+  &__name {
+    width: 100%;
+    height: 40px;
+
+    margin: 0;
+
+    color: $color-white;
+
+    font-family: $font-family-primary;
+    font-size: 32px;
+    font-weight: $font-weight-bold;
+    line-height: 40px;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+
+  &__experience {
+    width: 345px;
+    height: 26px;
+
+    margin: 0;
+
+    color: $color-grey;
+
+    font-family: $font-family-primary;
+    font-size: 16px;
+    font-weight: $font-weight-medium;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  &__rings {
+    position: absolute;
+
+    top: 540px;
+    left: 173px;
+
+    width: 186px;
+    height: 129px;
+
+    max-width: none;
+
+    z-index: 1;
+    pointer-events: none;
+  }
+}
+
+
+/* =========================
+   PROJECTS - MOBILE
+   ========================= */
+
+.projects {
+  position: relative;
+
+  width: 343px;
+
+  margin-top: 80px;
+  margin-left: 16px;
+
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    width: 343px;
+    height: 40px;
+
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    width: 152px;
+    height: 40px;
+
+    margin: 0;
+
+    color: $color-white;
+
+    font-family: $font-family-primary;
+    font-size: 40px;
+    font-weight: $font-weight-bold;
+    line-height: 40px;
+    letter-spacing: -1.14px;
+  }
+
+  &__header .link-button {
+    position: relative;
+
+    top: 0;
+    left: 0;
+
+    flex: 0 0 120px;
+  }
+
+  &__grid {
+    display: flex;
+    flex-direction: column;
+
+    gap: 40px;
+
+    width: 343px;
+  }
+}
+
+
+/* =========================
+   PROJECT CARD - MOBILE
+   ========================= */
+
+.project-card {
+  position: relative;
+
+  width: 343px;
+  height: 398px;
+
+  &__image-wrapper {
+    width: 343px;
+    height: 253px;
+
+    overflow: hidden;
+  }
+
+  &__image {
+    display: block;
+
+    width: 343px;
+    height: 253px;
+
+    max-width: none;
+
+    object-fit: cover;
+  }
+
+  &__info {
+    position: absolute;
+
+    top: 273px;
+    left: 0;
+
+    width: 100%;
+    height: 67px;
+  }
+
+  &__title {
+    width: 100%;
+    height: 32px;
+
+    margin: 0;
+
+    color: $color-white;
+
+    font-family: $font-family-primary;
+    font-size: 24px;
+    font-weight: $font-weight-bold;
+    line-height: 32px;
+
+    text-transform: uppercase;
+  }
+
+  &__technologies {
+    position: absolute;
+
+    top: 39px;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    height: 28px;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    color: $color-grey;
+
+    font-family: $font-family-primary;
+    font-size: 18px;
+    font-weight: $font-weight-medium;
+    line-height: 28px;
+
+    text-transform: uppercase;
+  }
+
+  &__links {
+    position: absolute;
+
+    top: 360px;
+    left: 0;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 30px;
+
+    width: 271px;
+    height: 38px;
+
+    .link-button {
+      position: relative;
+
+      top: 0;
+      left: 0;
+
+      height: 38px;
+    }
+
+    .link-button:first-child {
+      width: 138px;
+
+      &::after {
+        width: 138px;
+      }
+    }
+
+    .link-button:last-child {
+      width: 103px;
+
+      &::after {
+        width: 103px;
+      }
+    }
+  }
+}
+
+
+/* =========================
+   CONTACT - MOBILE
+   ========================= */
+
+.contact {
+  position: relative;
+
+  width: 375px;
+
+  margin-top: 80px;
+
+  padding: 60px 16px 87px;
+
+  background-color: $color-dark-grey;
+
+  overflow: hidden;
+
+  &__content {
+    width: 343px;
+    height: 138px;
+
+    text-align: center;
+  }
+
+  &__title {
+    width: 343px;
+    height: 40px;
+
+    margin: 0;
+
+    color: $color-white;
+
+    font-family: $font-family-primary;
+    font-size: 40px;
+    font-weight: $font-weight-bold;
+    line-height: 40px;
+    letter-spacing: -1.14px;
+    text-align: center;
+  }
+
+  &__description {
+    width: 343px;
+    height: 78px;
+
+    margin: 20px 0 0;
+
+    color: $color-grey;
+
+    font-family: $font-family-primary;
+    font-size: 16px;
+    font-weight: $font-weight-medium;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  &__rings {
+    position: absolute;
+
+    top: 436px;
+    left: 0;
+
+    width: 187px;
+    height: 129px;
+
+    max-width: none;
+
+    pointer-events: none;
+
+    z-index: 1;
+  }
+}
+
+.contact-form {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 32px;
+
+  width: 343px;
+
+  margin-top: 50px;
+
+  &__field {
+    width: 343px;
+
+    input,
+    textarea {
+      display: block;
+
+      width: 343px;
+
+      border: 0;
+      border-bottom: 1px solid $color-white;
+
+      background: transparent;
+      color: $color-white;
+
+      font-family: $font-family-primary;
+      font-size: 16px;
+      font-weight: $font-weight-medium;
+      line-height: 26px;
+      letter-spacing: -0.22px;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: $color-white;
+      opacity: 0.5;
+      text-transform: uppercase;
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: none;
+      border-bottom-color: $color-green;
+    }
+  }
+
+  &__field--name,
+  &__field--email {
+    height: 43px;
+
+    input {
+      height: 43px;
+
+      padding: 0 24px 16px;
+    }
+  }
+
+  &__field--message {
+    height: 107px;
+
+    textarea {
+      height: 107px;
+
+      padding: 0 24px 80px;
+
+      resize: none;
+    }
+  }
+
+  &__submit {
+    align-self: flex-end;
+
+    width: 144px;
+    height: 38px;
+
+    padding: 0;
+
+    &::after {
+      width: 144px;
+    }
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media screen and (min-width: 768px) {
+  .hero {
+    min-height: 661px;
+
+    &::after {
+      content: '';
+
+      position: absolute;
+
+      top: 660px;
+      left: 50%;
+
+      width: 706px;
+      height: 1px;
+
+      transform: translateX(-50%);
+
+      background-color: $color-white;
+    }
+
+    &__rings-left--mobile {
+      display: none;
+    }
+
+    &__rings-left--tablet {
+      display: block;
+
+      top: 86px;
+      left: 0;
+
+      width: 265px;
+      height: 129px;
+    }
+
+    &__image-wrapper {
+      top: 0;
+      left: 445.56px;
+
+      width: 322px;
+      height: 600px;
+
+      background-color: $color-dark-grey;
+
+      overflow: hidden;
+    }
+
+    &__image {
+      top: 127px;
+      left: -13.76px;
+
+      width: 349.85px;
+      height: 486px;
+    }
+
+    &__oval--mobile {
+      display: none;
+    }
+
+    &__oval--tablet {
+      display: block;
+
+      top: 471px;
+      left: 256.44px;
+
+      width: 66px;
+      height: 129px;
+    }
+
+    &__content {
+      top: 151px;
+      left: 32px;
+
+      width: 445px;
+      height: 449px;
+
+      text-align: left;
+
+      z-index: 4;
+    }
+
+    &__title {
+      width: 445px;
+      height: 233px;
+
+      font-size: 72px;
+      line-height: 72px;
+      letter-spacing: -2.05px;
+      text-align: left;
+
+      &::after {
+        top: 216px;
+        left: 0;
+
+        width: 402px;
+        height: 6px;
+      }
+    }
+
+    &__title-mobile {
+      display: none;
+    }
+
+    &__title-tablet {
+      display: block;
+
+      > span {
+        display: block;
+
+        white-space: nowrap;
+      }
+    }
+
+    &__description {
+      top: 293px;
+
+      width: 445px;
+      height: 84px;
+
+      font-size: 18px;
+      line-height: 28px;
+      text-align: left;
+    }
+
+    .link-button {
+      top: 411px;
+      left: 0;
+    }
+  }
+
+
+  .skills {
+    width: 708px;
+    height: 451px;
+
+    margin-top: -1px;
+    margin-left: 30px;
+
+    border: 0;
+
+    &__list {
+      top: 53px;
+      left: 2px;
+
+      display: grid;
+
+      grid-template-columns: 345px 345px;
+      grid-template-rows: repeat(3, 98px);
+
+      column-gap: 7px;
+      row-gap: 52px;
+
+      width: 697px;
+      height: 398px;
+    }
+
+    &__item {
+      align-items: flex-start;
+
+      gap: 14px;
+
+      width: 345px;
+      height: 98px;
+
+      text-align: left;
+    }
+
+    &__name {
+      width: 345px;
+      height: 56px;
+
+      font-size: 48px;
+      line-height: 56px;
+      letter-spacing: -1.5px;
+      text-align: left;
+    }
+
+    &__experience {
+      width: 345px;
+      height: 28px;
+
+      font-size: 18px;
+      line-height: 28px;
+      text-align: left;
+    }
+
+    &__rings {
+      top: 387px;
+      left: 540px;
+
+      width: 198px;
+      height: 129px;
+    }
+  }
+
+
+  .projects {
+    width: 708px;
+
+    margin-top: 100px;
+    margin-left: 30px;
+
+    &__header {
+      align-items: center;
+
+      width: 706px;
+      height: 72px;
+
+      margin-left: 2px;
+      margin-bottom: 60px;
+    }
+
+    &__title {
+      width: 273px;
+      height: 72px;
+
+      font-size: 72px;
+      line-height: 72px;
+      letter-spacing: -2.05px;
+    }
+
+    &__header .link-button {
+      position: relative;
+
+      top: 0;
+      left: 0;
+
+      margin-left: auto;
+    }
+
+    &__grid {
+      display: grid;
+
+      grid-template-columns: repeat(2, 342px);
+      grid-auto-rows: 398px;
+
+      column-gap: 24px;
+      row-gap: 60px;
+
+      width: 708px;
+      height: 1314px;
+    }
+  }
+
+
+  .project-card {
+    width: 342px;
+    height: 398px;
+
+    &__image-wrapper {
+      width: 342px;
+      height: 253px;
+    }
+
+    &__image {
+      width: 342px;
+      height: 253px;
+    }
+
+    &__info {
+      width: 342px;
+    }
+
+    &__title {
+      width: 342px;
+    }
+
+    &:nth-child(5) {
+      width: 344px;
+
+      .project-card__image-wrapper,
+      .project-card__info {
+        margin-left: 2px;
+      }
+    }
+  }
+
+
+  .contact {
+    width: 768px;
+    height: 703px;
+
+    margin-top: 100px;
+
+    padding: 0;
+
+    &__content {
+      position: absolute;
+
+      top: 60px;
+      left: 162px;
+
+      width: 445px;
+      height: 176px;
+    }
+
+    &__title {
+      width: 270px;
+      height: 72px;
+
+      margin: 0 auto;
+
+      font-size: 72px;
+      line-height: 72px;
+      letter-spacing: -2.05px;
+    }
+
+    &__description {
+      width: 445px;
+      height: 84px;
+
+      margin-top: 20px;
+
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    &__rings {
+      top: 547px;
+
+      width: 162px;
+      height: 129px;
+    }
+  }
+
+
+  .contact-form {
+    position: absolute;
+
+    top: 284px;
+    left: 162px;
+
+    width: 445px;
+    height: 327px;
+
+    margin: 0;
+
+    &__field,
+    &__field input,
+    &__field textarea {
+      width: 445px;
+    }
+
+    &__submit {
+      width: 144px;
+    }
+  }
+}
+
+
+/* =========================================================
+   HOME DESKTOP
+   ========================================================= */
+
+@media screen and (min-width: 1200px) {
+
+  .hero,
+  .skills,
+  .projects,
+  .contact {
+    --desktop-content-width: min(1110px, calc(100% - 64px));
+    --desktop-content-left:
+      calc((100% - var(--desktop-content-width)) / 2);
+  }
+
+
+  /* =========================
+     HERO - DESKTOP
+     ========================= */
+
+  .hero {
+    width: 100%;
+    min-height: 825px;
+
+    margin: 0;
+
+    &::after {
+      top: 824px;
+      left: var(--desktop-content-left);
+
+      width: var(--desktop-content-width);
+
+      transform: none;
+    }
+
+    &__rings-left--tablet {
+      display: none;
+    }
+
+    &__rings-left--desktop {
+      display: block;
+
+      top: 133px;
+      left: 0;
+
+      width: 430px;
+      height: 129px;
+
+      max-width: none;
+    }
+
+    &__image-wrapper {
+      top: 0;
+      left: calc(var(--desktop-content-left) + 665px);
+
+      width: 445px;
+      height: 720px;
+
+      background-color: $color-dark-grey;
+
+      overflow: hidden;
+    }
+
+    &__image {
+      top: 141px;
+      left: 0;
+
+      width: 445px;
+      height: 618px;
+
+      max-width: none;
+    }
+
+    &__oval--tablet {
+      display: none;
+    }
+
+    &__oval--desktop {
+      display: block;
+
+      top: 521px;
+      left: calc(var(--desktop-content-left) + 601px);
+
+      width: 129px;
+      height: 129px;
+    }
+
+    &__content {
+      top: 198px;
+      left: var(--desktop-content-left);
+
+      width: 709px;
+      height: 407px;
+
+      text-align: left;
+    }
+
+    &__title {
+      width: 709px;
+      height: 182px;
+
+      font-size: 88px;
+      line-height: 88px;
+      letter-spacing: -2.5px;
+      text-align: left;
+
+      &::after {
+        top: 176px;
+        left: 137px;
+
+        width: 492px;
+        height: 6px;
+      }
+    }
+
+    &__title-mobile {
+      display: block;
+
+      > span {
+        display: block;
+
+        white-space: nowrap;
+      }
+    }
+
+    &__title-tablet {
+      display: none;
+    }
+
+    &__description {
+      top: 219px;
+      left: 0;
+
+      width: 445px;
+      height: 84px;
+
+      font-size: 18px;
+      line-height: 28px;
+      text-align: left;
+    }
+
+    .link-button {
+      top: 369px;
+      left: 0;
+    }
+  }
+
+
+  /* =========================
+     SKILLS - DESKTOP
+     ========================= */
+
+  .skills {
+    width: var(--desktop-content-width);
+    height: 327px;
+
+    margin-top: -1px;
+    margin-right: auto;
+    margin-left: auto;
+
+    border: 0;
+
+    &__list {
+      top: 73px;
+      left: 5px;
+
+      display: grid;
+
+      grid-template-columns: repeat(3, 345px);
+      grid-template-rows: repeat(2, 98px);
+
+      column-gap: 30px;
+      row-gap: 58px;
+
+      width: 1100px;
+      height: 254px;
+    }
+
+    &__item {
+      width: 345px;
+      height: 98px;
+
+      transform: none;
+    }
+
+    &__name {
+      width: 345px;
+      height: 56px;
+
+      font-size: 48px;
+      line-height: 56px;
+      letter-spacing: -1.5px;
+      text-align: left;
+    }
+
+    &__experience {
+      width: 345px;
+      height: 28px;
+
+      font-size: 18px;
+      line-height: 28px;
+      text-align: left;
+    }
+
+    &__rings {
+      top: 253px;
+      right: calc((100vw - 100%) / -2);
+      left: auto;
+
+      width: 291px;
+      height: 129px;
+
+      max-width: none;
+
+      z-index: 1;
+      pointer-events: none;
+    }
+  }
+
+
+  /* =========================
+     PROJECTS - DESKTOP
+     ========================= */
+
+  .projects {
+    width: var(--desktop-content-width);
+    height: 1767px;
+
+    margin-top: 140px;
+    margin-right: auto;
+    margin-left: auto;
+
+    &__header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      width: 100%;
+      height: 88px;
+
+      margin: 0 0 80px;
+    }
+
+    &__title {
+      width: 334px;
+      height: 88px;
+
+      font-size: 88px;
+      line-height: 88px;
+      letter-spacing: -2.5px;
+    }
+
+    &__header .link-button {
+      position: relative;
+
+      top: 25px;
+      left: 0;
+
+      width: 120px;
+      height: 38px;
+
+      margin: 0;
+    }
+
+    &__grid {
+      display: grid;
+
+      grid-template-columns: repeat(2, 540px);
+      grid-template-rows: repeat(3, 487px);
+
+      column-gap: 30px;
+      row-gap: 69px;
+
+      width: 1110px;
+      height: 1599px;
+    }
+  }
+
+
+  /* =========================
+     PROJECT CARD - DESKTOP
+     ========================= */
+
+  .project-card {
+    width: 540px;
+    height: 487px;
+
+    &__image-wrapper {
+      width: 540px;
+      height: 400px;
+
+      margin: 0;
+
+      overflow: hidden;
+    }
+
+    &__image {
+      display: block;
+
+      width: 540px;
+      height: 400px;
+
+      max-width: none;
+
+      object-fit: cover;
+    }
+
+    &__info {
+      top: 420px;
+      left: 0;
+
+      width: 540px;
+      height: 67px;
+
+      margin: 0;
+    }
+
+    &__title {
+      width: 540px;
+      height: 32px;
+
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    &__technologies {
+      top: 39px;
+      left: 0;
+
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    &__image-wrapper {
+      position: relative;
+
+      &::after {
+        content: '';
+
+        position: absolute;
+        inset: 0;
+
+        width: 540px;
+        height: 400px;
+
+        background-color: rgba(0, 0, 0, 0.75);
+
+        opacity: 0;
+        visibility: hidden;
+
+        transition:
+          opacity 180ms ease,
+          visibility 180ms ease;
+
+        z-index: 1;
+        pointer-events: none;
+      }
+    }
+
+    &__links {
+      position: absolute;
+
+      top: 138px;
+      left: 201px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      gap: 48px;
+
+      width: 138px;
+      height: 124px;
+
+      opacity: 0;
+      visibility: hidden;
+
+      transition:
+        opacity 180ms ease,
+        visibility 180ms ease;
+
+      z-index: 2;
+
+      .link-button {
+        position: relative;
+
+        top: 0;
+        left: 0;
+
+        height: 38px;
+
+        color: $color-white;
+      }
+
+      .link-button:first-child {
+        width: 138px;
+
+        &::after {
+          width: 138px;
+        }
+      }
+
+      .link-button:last-child {
+        width: 103px;
+
+        margin-left: 18px;
+
+        &::after {
+          width: 103px;
+        }
+      }
+    }
+
+    &:hover,
+    &:focus-within {
+      .project-card__image-wrapper::after,
+      .project-card__links {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &:nth-child(5) {
+      width: 540px;
+
+      .project-card__image-wrapper,
+      .project-card__info {
+        width: 540px;
+
+        margin: 0;
+      }
+    }
+  }
+
+
+  /* =========================
+     CONTACT - DESKTOP
+     ========================= */
+
+  .contact {
+    width: 100%;
+    height: 503px;
+
+    margin-top: 139px;
+    margin-left: 0;
+
+    padding: 0;
+
+    background-color: $color-dark-grey;
+
+    &__content {
+      position: absolute;
+
+      top: 84px;
+      left: var(--desktop-content-left);
+
+      width: 445px;
+      height: 208px;
+
+      text-align: left;
+    }
+
+    &__title {
+      width: 330px;
+      height: 88px;
+
+      margin: 0;
+
+      font-size: 88px;
+      line-height: 88px;
+      letter-spacing: -2.5px;
+      text-align: left;
+    }
+
+    &__description {
+      width: 445px;
+      height: 84px;
+
+      margin-top: 36px;
+
+      font-size: 18px;
+      line-height: 28px;
+      text-align: left;
+    }
+
+    /*
+     * El PNG Desktop ya contiene únicamente los 325px
+     * visibles del gráfico original de 530px.
+     *
+     * Posición global del diseño: 3524px.
+     * Contact comienza en:        3197px.
+     * 3524 - 3197 = 327px.
+     */
+    &__rings {
+      display: block;
+
+      top: 327px;
+      left: 0;
+
+      width: 325px;
+      height: 129px;
+
+      max-width: none;
+
+      opacity: 1;
+
+      z-index: 1;
+      pointer-events: none;
+    }
+  }
+
+
+  /* =========================
+     CONTACT FORM - DESKTOP
+     ========================= */
+
+  .contact-form {
+    top: 84px;
+    left: calc(var(--desktop-content-left) + 665px);
+
+    width: 445px;
+    height: 327px;
+
+    margin: 0;
+
+    &__field,
+    &__field input,
+    &__field textarea {
+      width: 445px;
+    }
+
+    /*
+     * DESKTOP ACTIVE
+     * Campo activo correcto:
+     * la línea inferior pasa a verde.
+     */
+    &__field input:focus,
+    &__field textarea:focus {
+      outline: none;
+      border-bottom-color: $color-green;
+    }
+
+    /*
+     * Estado de error del EMAIL.
+     * La clase .is-error se añade desde JavaScript al salir
+     * del campo (blur) si el email no es válido.
+     */
+    &__field--email {
+      position: relative;
+
+      &.is-error {
+        height: 64px;
+
+        input {
+          border-bottom-color: #ff6f5b;
+        }
+
+        /*
+         * Icono 24 x 24.
+         * El PDF no aporta top exacto; se centra verticalmente
+         * respecto a los 43px del input.
+         */
+        &::before {
+          content: '';
+
+          position: absolute;
+
+          top: 9.5px;
+          left: 421px;
+
+          width: 24px;
+          height: 24px;
+
+          background-image: url('../img/icono-error.png');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 24px 24px;
+
+          pointer-events: none;
+        }
+
+        &::after {
+          content: 'Sorry, invalid format here';
+
+          position: absolute;
+
+          top: 48px;
+          left: 303px;
+
+          width: 142px;
+          height: 16px;
+
+          color: #ff6f5b;
+
+          font-family: $font-family-primary;
+          font-size: 12px;
+          font-weight: $font-weight-medium;
+          line-height: 16px;
+          letter-spacing: -0.17px;
+
+          white-space: nowrap;
+
+          pointer-events: none;
+        }
+      }
+    }
+
+    &__submit {
+      align-self: flex-end;
+
+      width: 144px;
+      height: 38px;
+    }
+  }
+
+}

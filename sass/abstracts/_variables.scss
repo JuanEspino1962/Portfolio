@@ -1,0 +1,17 @@
+// --- Colores del Design System ---
+$color-black: #151515;         // Fondo principal / Texto oscuro
+$color-green: #4ee1a0;         // Acentos, líneas activas y hover
+$color-dark-grey: #242424;     // Fondos secundarios / footer
+$color-grey: #d9d9d9;          // Texto secundario / bordes base
+$color-white: #ffffff;         // Texto claro
+$color-error: #ff6f5b;         // Estado de error en formularios
+
+// --- Tipografía ---
+$font-family-primary: 'Space Grotesk', sans-serif;
+
+// --- Pesos tipográficos ---
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+// --- Breakpoints (Mobile First) ---
+$breakpoint-tablet: 768px;

@@ -1,0 +1,210 @@
+@use '../abstracts/abstracts' as *;
+
+
+/* =========================
+   FOOTER - MOBILE
+   ========================= */
+
+.footer {
+  position: relative;
+
+  width: 375px;
+
+  margin: 0;
+
+  padding: 40px 0 60px;
+
+  background-color: $color-dark-grey;
+
+  border-top: 1px solid $color-white;
+
+  &__inner {
+    position: relative;
+
+    width: 154px;
+    height: 72px;
+
+    margin: 0 auto;
+  }
+
+  &__logo {
+    position: absolute;
+
+    top: 0;
+    left: 12px;
+
+    width: 129px;
+    height: 32px;
+
+    color: $color-white;
+
+    font-family: $font-family-primary;
+    font-size: 24px;
+    font-weight: $font-weight-bold;
+    line-height: 32px;
+    letter-spacing: -0.33px;
+  }
+
+  .socials {
+    position: absolute;
+
+    top: 52px;
+    left: 0;
+
+    width: 154px;
+    height: 20px;
+  }
+}
+
+
+/* =========================
+   FOOTER - TABLET
+   ========================= */
+
+@media screen and (min-width: 768px) {
+  .footer {
+    width: 768px;
+    height: 103px;
+
+    padding: 0;
+
+    border-top: 0;
+
+    &::before {
+      content: '';
+
+      position: absolute;
+
+      top: 0;
+      left: 30px;
+
+      width: 706px;
+      height: 1px;
+
+      background-color: $color-white;
+    }
+
+    &__inner {
+      position: absolute;
+
+      top: 31px;
+      left: 30px;
+
+      width: 708.49px;
+      height: 32px;
+
+      margin: 0;
+    }
+
+    &__logo {
+      top: 0;
+      left: 0;
+
+      width: 172px;
+      height: 32px;
+
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: -0.44px;
+    }
+
+    .socials {
+      top: 4px;
+      left: 516px;
+
+      width: 192.49px;
+      height: 25px;
+
+      &__item:nth-child(1) img {
+        width: 24.61px;
+        height: 24px;
+      }
+
+      &__item:nth-child(2) img {
+        width: 24.6px;
+        height: 21.99px;
+      }
+
+      &__item:nth-child(3) img {
+        width: 24px;
+        height: 24px;
+      }
+
+      &__item:nth-child(4) img {
+        width: 23.28px;
+        height: 18.93px;
+      }
+    }
+  }
+}
+
+
+/* =========================
+   FOOTER - DESKTOP
+   ========================= */
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    width: 100%;
+    height: 172px;
+
+    margin: 0;
+
+    padding: 0;
+
+    background-color: $color-dark-grey;
+
+    border: 0;
+
+    &::before {
+      content: '';
+
+      position: absolute;
+
+      top: 0;
+      left: 50%;
+
+      width: min(1110px, calc(100% - 64px));
+      height: 1px;
+
+      transform: translateX(-50%);
+
+      background-color: $color-white;
+    }
+
+    &__inner {
+      position: absolute;
+
+      top: 48px;
+      left: 50%;
+
+      width: min(1110px, calc(100% - 64px));
+      height: 32px;
+
+      margin: 0;
+
+      transform: translateX(-50%);
+    }
+
+    &__logo {
+      top: 0;
+      left: 0;
+
+      width: 172px;
+      height: 32px;
+
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: -0.44px;
+    }
+
+    .socials {
+      top: 4px;
+      right: 0;
+      left: auto;
+
+      width: 192.49px;
+      height: 25px;
+    }
+  }
+}
